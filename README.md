@@ -2,7 +2,7 @@
 Wrapper scripts to facilitate the running of [v3.0 TASSEL](https://tassel.bitbucket.io/TasselArchived.html) (Trait Analysis by aSSociation, Evolution and Linkage) and [UNEAK](https://bytebucket.org/tasseladmin/tassel-5-source/wiki/docs/TasselPipelineUNEAK.pdf) (Universal Network Enabled Analysis Kit) pipelines from https://www.maizegenetics.net/tassel/
 
 # Disclaimer
-* This software is not endorsed by the [Edward Buckler Lab](https://www.maizegenetics.net/tassel/) or Cornell University
+* These scripts are not endorsed by the [Edward Buckler Lab](https://www.maizegenetics.net/tassel/) or Cornell University
 * For running TASSEL with a reference genome it is recommended that you use the [latest v5.0](https://www.maizegenetics.net/tassel)
 * For running TASSEL without a reference genome the v3.0 of [UNEAK](https://bytebucket.org/tasseladmin/tassel-5-source/wiki/docs/TasselPipelineUNEAK.pdf) may still be used
 
