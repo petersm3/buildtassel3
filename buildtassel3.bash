@@ -153,7 +153,7 @@ cat <<'EOF'
       See: https://bitbucket.org/khyma/igd_public
       For reference genomes with extrachromosomal scaffolds, 
       there is no relationship between the marker rs# in the hapMap
-      fle and marker scaffold or position. For more details see:
+      file and marker scaffold or position. For more details see:
       'outputdir'/referencegenome/README.txt
       Use with -p tassel (and default -a bwa)
 
