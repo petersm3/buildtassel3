@@ -12,7 +12,7 @@ Bradbury PJ, Zhang Z, Kroon DE, Casstevens TM, Ramdoss Y, Buckler ES. (2007) [TA
 # Dependencies
 * [TASSEL v3.0](https://tassel.bitbucket.io/TasselArchived.html)
 * `bwa` ([Burrows-Wheeler Aligner](https://bio-bwa.sourceforge.net/)) (for TASSEL not UNEAK)
-* https://bitbucket.org/khyma/igd_public `concatenate.pl` and `deconcatenate.pl` scripts (if using the `-i` option)
+* `concatenate.pl` and `deconcatenate.pl` [scripts](https://bitbucket.org/khyma/igd_public) (if using the `-i` option)
 
 # Usage
 ```text
