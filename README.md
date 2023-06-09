@@ -9,6 +9,10 @@ Wrapper scripts to facilitate the running of [v3.0 TASSEL](https://tassel.bitbuc
 # Reference
 Bradbury PJ, Zhang Z, Kroon DE, Casstevens TM, Ramdoss Y, Buckler ES. (2007) [TASSEL: Software for association mapping of complex traits in diverse samples](https://tassel.bitbucket.io/docs/bradbury2007bioinformatics.pdf). *Bioinformatics* 23:2633-2635.
 
+# Dependencies
+* [TASSEL v3.0](https://tassel.bitbucket.io/TasselArchived.html)
+* [Burrows-Wheeler Aligner](https://bio-bwa.sourceforge.net/)
+
 # Usage
 ```text
 ./buildtassel3.bash -h
