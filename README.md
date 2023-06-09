@@ -96,3 +96,141 @@ Usage: ./buildtassel3-itest.bash -p pipeline -o outputdir [-a alignment] [-i] [-
 -h    Show this usage information.
 
 ```
+
+## Example
+```text
+./buildtassel3.bash -s -p tassel -o ./testo
+
+-----------------------------------------------------------------------
+Default directory structure created in ./testo
+-----------------------------------------------------------------------
+
+--------
+KEY FILE
+--------
+
+Create an appropriate key file for your experiment, see Appendix 1 in:
+* 'TASSEL 3.0 Genotyping by Sequencing (GBS) pipeline documentation' OR
+* 'Tassel 3.0 UNEAK Pipeline Document'
+
+Update the sample comma seperated value (CSV) key file (key.csv) in 
+the outputdir you specified, e.g., my-outputdir/key.csv
+
+NOTES:
+* If you put values in for "LibraryPrepID" it must be an integer.
+  "LibraryPrepID's are used to facilitate merging of the TagsByTaxa
+   counts from replicate runs of the same library preps (on multiple flow
+   cell lanes)." - TasselPipelineGBS.pdf Appendix 1: Key file example
+* Processing TASSEL runs using the "production pipeline" (as oppposed to
+  the "discovery pipeline") are not supported by this script, i.e., 
+  The "LibraryPrepID" will not be used by this script.
+* Do not create a tab sepearted value (TSV) key file. The CSV key
+  file will automatically be converted to a TSV by this script.
+* Do NOT place any files in the key/ directory.
+
+
+-------------
+FASTQ FILE(S)
+-------------
+
+Populate the Illumina directory with a *single* gzipped FASTQ file
+*per* FLOWCELL LANE using the TASSEL naming convention, e.g., 
+
+description_FLOWCELL_s_LANE_fastq.txt.gz
+
+For information about the FASTQ naming conventions see the 
+documentation at http://www.maizegenetics.net/tassel/ for:
+* TASSEL see FastqToTagCountPlugin in TasselPipelineGBS.pdf
+* UNEAK see UQseqToTagCountPlugin in uneak_pipeline_documentation.pdf
+
+cd Illumina # Example
+ls -1
+ALL_ABC12AAXX_s_5_fastq.txt.gz
+ALL_ABC12AAXX_s_6_fastq.txt.gz
+ALL_DEF34BBYY_s_1_fastq.txt.gz
+ALL_DEF34BBYY_s_5_fastq.txt.gz
+
+NOTES:
+* There should be *no more* than 4 underscores (_) in the filenames.
+* This pipeline uses a *single* 'fastq' file, not a (Illumina GAIIx)
+  'qseq' file. If you have several fastq files from a single HiSeq 
+  lane you can concatenate them together with the following:
+
+  cd Sample_lane5
+  cat *.fastq.gz > ALL_ABC12AAXX_s_5_fastq.txt.gz
+
+* If you plan to perform a single analysis of the FASTQ files then
+  place the FASTQ file(s) here for example: my-outputdir/Illumina/
+* If you plan to perform multiple analyses of the FASTQ files then
+  place the FASTQ file(s) in a directory *outside* of the "Illumina"
+  directory and create a symblic link to that directory, e.g.:
+
+  cd my-outputdir
+  rm Illumina/README.txt    # Delete this README.txt file
+  rmdir Illumina
+  ln -s /data/other-Illumina-dir ./Illumina
+
+
+----------------
+REFERENCE GENOME 
+----------------
+
+Setup a single reference genome file in the referencegenome directory.
+
+NOTES: 
+* Do NOT place any other files in this directory other than your single
+  reference genome FASTA file and the default README.txt file.
+* The name of your reference genome FASTA file does not matter.
+* The headers on the FASTA file may only contain only single integers and
+  may optionally lead with the string 'chr', e.g.,
+
+  # Show first threee headers of sample fasta file
+
+  grep "^>" my-outputdir/referencegenome/myref.fa | head -n3
+  >1
+  >2 
+  >3
+
+  # OR same example with allowed 'chr' in the header
+
+  grep "^>" my-outputdir/referencegenome/myref.fa | head -n3
+  >chr1
+  >chr2
+  >chr3
+
+* The integers in the header must be in ascending order (except for -i)
+* TASSEL expects that it is only going to process a small set of chromosomes 
+  in the reference sequence file. If your reference genome contains hundreds 
+  or hundreds of thousands of scaffolds then these should be run in an 
+  independent TASSEL run using the -i option (see below for details).
+* For genomes with hundreds to thousands of scaffolds, extrachromosomal 
+  scaffolds must be concatenated end to end into a single pseudoscaffold for 
+  TASSEL to successfully execute. This pseudoscaffold becomes "S1", and the 
+  length of S1 is the sum of the lengths of all the concatenated scaffolds. 
+  When SNPs are called on this scaffold, the SNP coordinates are relative to 
+  S1. At the end of the Tassel pipeline, the pseudoscaffold is disassembled 
+  back into its original component scaffolds, and the coordinates of the SNP
+  calls on each individual scaffold are then reported in the "chrom" and "pos"
+  columns (columns 3 and 4) in the hapMap file. The SNP IDs reported in the
+  first column, however, retain the "S1" pseudochromosome designation, an
+  underscore, and the coordinate of the SNP on the pseudochromosome. Therefore,
+  THE NUMBERS IN THE RS# COLUMN (FIRST COLUMN) ARE ESSENTIALLY MEANINGLESS AND
+  CAN BE IGNORED. To reformat the first column so that SNP IDs are related to
+  their true scaffolds and positions, print "S" (column3)"_"(column4).
+
+
+---------
+REFERENCE
+---------
+
+The above information can also be found at:
+KEY FILE        : ./testo/README.txt
+FASTQ FILE(S)   : ./testo/Illumina/README.txt
+REFERENCE GENOME: ./testo/referencegenome/README.txt
+
+Run './buildtassel3.bash -d -p tassel -o ./testo' to test your setup.
+Run './buildtassel3.bash    -p tassel -o ./testo' to process your data.
+
+Try './buildtassel3.bash -h' for more information.
+
+```
