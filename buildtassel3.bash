@@ -151,7 +151,7 @@ cat <<'EOF'
       'outputdir'/referencegenome directory. If you have other
       "real" chromosomes perform a separate TASSEL run.
       See: https://bitbucket.org/khyma/igd_public
-      For reference genomes with extrachromosomal scaffolds, 
+      For reference genomes with extra chromosomal scaffolds, 
       there is no relationship between the marker rs# in the hapMap
       file and marker scaffold or position. For more details see:
       'outputdir'/referencegenome/README.txt
