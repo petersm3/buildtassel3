@@ -4,7 +4,7 @@ Wrapper scripts to facilitate the running of [TASSEL](https://tassel.bitbucket.i
 # Disclaimer
 * These scripts are not endorsed by the [Edward Buckler Lab](https://www.maizegenetics.net/tassel/) or Cornell University
 * For running TASSEL with a reference genome it is recommended that you use the [latest v5.0](https://www.maizegenetics.net/tassel)
-  * `buildtassel3.bash` will only work with TASSEl/UNEAK v3.0, not v5.0
+  * `buildtassel3.bash` will only work with TASSEL/UNEAK v3.0, not v5.0
 * For running TASSEL without a reference genome the v3.0 of [UNEAK](https://bytebucket.org/tasseladmin/tassel-5-source/wiki/docs/TasselPipelineUNEAK.pdf) may still be used
 
 # Reference
