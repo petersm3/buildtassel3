@@ -700,7 +700,7 @@ else
 fi
 
 # 20150807 petersm3 Check to see if there are spaces in the PlateName field
-# Tthis causes UNEAK GBSHapMapFiltersPlugin to fail; unsure about TASSEL
+# This causes UNEAK GBSHapMapFiltersPlugin to fail; unsure about TASSEL
 if [ `awk -F, '{printf $5"\n"}' ${OUTPUT_DIR}/key.csv | grep ' ' | wc -l` -ne 0 ]; then
     echo "ERROR: There is at least one space (' ') in at least one 'PlateRecord' entry"
     echo "       in ${OUTPUT_DIR}/key.csv"
