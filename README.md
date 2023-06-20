@@ -7,8 +7,14 @@ Wrapper scripts to facilitate the running of [TASSEL](https://tassel.bitbucket.i
   * `buildtassel3.bash` will only work with TASSEL/UNEAK v3.0, not v5.0
 * For running TASSEL without a reference genome the v3.0 of [UNEAK](https://bytebucket.org/tasseladmin/tassel-5-source/wiki/docs/TasselPipelineUNEAK.pdf) may still be used
 
-# Reference
+# References
+## TASSEL
 Bradbury PJ, Zhang Z, Kroon DE, Casstevens TM, Ramdoss Y, Buckler ES. (2007) [TASSEL: Software for association mapping of complex traits in diverse samples](https://tassel.bitbucket.io/docs/bradbury2007bioinformatics.pdf). *Bioinformatics* 23:2633-2635.
+
+## buildtassel3
+`buildtassel.bash` used as part of:
+
+Henning, J. A., Coggins, J., & [Peterson, M.](https://orcid.org/0000-0003-4422-4463) (2015). Simple SNP-based minimal marker genotyping for *Humulus lupulus* L. identification and variety validation. *BMC Research Notes*, 8(1), 542. doi:[10.1186/s13104-015-1492-2](https://doi.org/10.1186/s13104-015-1492-2)
 
 # Dependencies
 * [TASSEL v3.0](https://tassel.bitbucket.io/TasselArchived.html)
