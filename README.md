@@ -15,7 +15,7 @@ Bradbury PJ, Zhang Z, Kroon DE, Casstevens TM, Ramdoss Y, Buckler ES. (2007) [TA
 Lu F, Lipka AE, Elshire R, Cherney JH, Casler MD, Buckler ES, Costich DE. [Switchgrass genomic diversity, ploidy, and evolution: novel insights from a network-based SNP discovery protocol](https://doi.org/10.1371/journal.pgen.1003215). *PLoS Genet*. 2013;9(1):e1003215. 
 
 ## buildtassel3
-`buildtassel.bash` used as part of:
+`buildtassel3.bash` used as part of:
 
 [Henning, J. A.](https://www.ars.usda.gov/pacific-west-area/corvallis-or/forage-seed-and-cereal-research-unit/people/john-henning/), Coggins, J., & [Peterson, M.](https://orcid.org/0000-0003-4422-4463) (2015). Simple SNP-based minimal marker genotyping for *Humulus lupulus* L. identification and variety validation. *BMC Research Notes*, 8(1), 542. doi:[10.1186/s13104-015-1492-2](https://doi.org/10.1186/s13104-015-1492-2)
 
