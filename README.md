@@ -11,6 +11,9 @@ Wrapper scripts to facilitate the running of [TASSEL](https://tassel.bitbucket.i
 ## TASSEL
 Bradbury PJ, Zhang Z, Kroon DE, Casstevens TM, Ramdoss Y, Buckler ES. (2007) [TASSEL: Software for association mapping of complex traits in diverse samples](https://tassel.bitbucket.io/docs/bradbury2007bioinformatics.pdf). *Bioinformatics* 23:2633-2635.
 
+## UNEAK
+Lu F, Lipka AE, Elshire R, Cherney JH, Casler MD, Buckler ES, Costich DE. [Switchgrass genomic diversity, ploidy, and evolution: novel insights from a network-based SNP discovery protocol](https://doi.org/10.1371/journal.pgen.1003215). *PLoS Genet*. 2013;9(1):e1003215. 
+
 ## buildtassel3
 `buildtassel.bash` used as part of:
 
