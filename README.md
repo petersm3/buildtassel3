@@ -17,7 +17,7 @@ Lu F, Lipka AE, Elshire R, Cherney JH, Casler MD, Buckler ES, Costich DE. [Switc
 ## buildtassel3
 `buildtassel3.bash` used as part of:
 
-[Henning, J. A.](https://www.ars.usda.gov/pacific-west-area/corvallis-or/forage-seed-and-cereal-research-unit/people/john-henning/), Coggins, J., & [Peterson, M.](https://orcid.org/0000-0003-4422-4463) (2015). Simple SNP-based minimal marker genotyping for *Humulus lupulus* L. identification and variety validation. *BMC Research Notes*, 8(1), 542. doi:[10.1186/s13104-015-1492-2](https://doi.org/10.1186/s13104-015-1492-2)
+[Henning, J. A.](https://www.ars.usda.gov/pacific-west-area/corvallis-or/forage-seed-and-cereal-research-unit/people/john-henning/), Coggins, J., & [Peterson, M.](https://orcid.org/0000-0003-4422-4463) (2015). Simple [SNP](https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism)-based minimal marker genotyping for *[Humulus lupulus](https://en.wikipedia.org/wiki/Humulus_lupulus)* L. identification and variety validation. *BMC Research Notes*, 8(1), 542. doi:[10.1186/s13104-015-1492-2](https://doi.org/10.1186/s13104-015-1492-2)
 
 # Dependencies
 * [TASSEL v3.0](https://tassel.bitbucket.io/TasselArchived.html)
