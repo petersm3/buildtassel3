@@ -244,7 +244,7 @@ Run './buildtassel3.bash    -p tassel -o ./testo' to process your data.
 Try './buildtassel3.bash -h' for more information.
 
 ```
-```bash
+```console
 $ find ./testo
 ./testo
 ./testo/Illumina
