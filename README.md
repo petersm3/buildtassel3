@@ -245,23 +245,26 @@ Try './buildtassel3.bash -h' for more information.
 
 ```
 ```bash
-$ ls -1 ./testo
-hapMap/
-Illumina/
-key/
-key.csv
-mapInfo/
-mergedTagCounts/
-mergedtbt/
-README.txt
-referencegenome/
-support/
-tagCounts/
-tagPair/
-tagsByTaxa/
-tbt/
-topm/
-vcf/
+$ find ./testo
+./testo
+./testo/Illumina
+./testo/Illumina/README.txt
+./testo/key
+./testo/tagCounts
+./testo/mergedTagCounts
+./testo/tagPair
+./testo/tagsByTaxa
+./testo/mapInfo
+./testo/hapMap
+./testo/vcf
+./testo/support
+./testo/referencegenome
+./testo/referencegenome/README.txt
+./testo/tbt
+./testo/topm
+./testo/mergedtbt
+./testo/key.csv
+./testo/README.txt
 $ cat ./testo/key.csv 
 Flowcell,Lane,Barcode,Sample,PlateName,Row,Column,LibraryPrepID,Comments
 ABC12AAXX,5,CTCC,MySample001,MyPlate1,A,1,,My comment A
