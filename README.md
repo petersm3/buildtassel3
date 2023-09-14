@@ -26,7 +26,7 @@ Lu F, Lipka AE, Elshire R, Cherney JH, Casler MD, Buckler ES, Costich DE. [Switc
 
 # Usage
 ```console
-./buildtassel3.bash -h
+$ ./buildtassel3.bash -h
 
 --------
 OVERVIEW
@@ -109,7 +109,7 @@ Usage: ./buildtassel3-itest.bash -p pipeline -o outputdir [-a alignment] [-i] [-
 
 ## Example
 ```console
-./buildtassel3.bash -s -p tassel -o ./testo
+$ ./buildtassel3.bash -s -p tassel -o ./testo
 
 -----------------------------------------------------------------------
 Default directory structure created in ./testo
