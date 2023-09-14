@@ -244,3 +244,35 @@ Run './buildtassel3.bash    -p tassel -o ./testo' to process your data.
 Try './buildtassel3.bash -h' for more information.
 
 ```
+```bash
+$ ls -1 ./testo
+hapMap/
+Illumina/
+key/
+key.csv
+mapInfo/
+mergedTagCounts/
+mergedtbt/
+README.txt
+referencegenome/
+support/
+tagCounts/
+tagPair/
+tagsByTaxa/
+tbt/
+topm/
+vcf/
+$ cat ./testo/key.csv 
+Flowcell,Lane,Barcode,Sample,PlateName,Row,Column,LibraryPrepID,Comments
+ABC12AAXX,5,CTCC,MySample001,MyPlate1,A,1,,My comment A
+ABC12AAXX,5,TGCA,MySample002,MyPlate1,A,2,,My comment B
+ABC12AAXX,5,ACTA,MySample003,MyPlate1,A,3,,My comment C
+ABC12AAXX,6,CTCC,MySample001,MyPlate1,A,1,,My replicate A
+ABC12AAXX,6,TGCA,MySample002,MyPlate1,A,2,,My replicate B
+ABC12AAXX,6,ACTT,MySample004,MyPlate1,A,4,,My comment D
+DEF34BBYY,1,CCAA,MySample010,MyPlate2,A,1,,My comment F
+DEF34BBYY,1,CTAA,MySample011,MyPlate2,A,2,,My comment G
+DEF34BBYY,1,CGAA,MySample012,MyPlate2,A,3,,My comment H
+DEF34BBYY,5,CCAA,MySample010,MyPlate2,A,1,,My replicate F
+DEF34BBYY,5,GTAA,MySample013,MyPlate3,A,2,,My comment G
+DEF34BBYY,5,GGAC,MySample014,MyPlate3,A,3,,My comment H
