@@ -22,6 +22,7 @@ Lu F, Lipka AE, Elshire R, Cherney JH, Casler MD, Buckler ES, Costich DE. [Switc
 # Dependencies
 * [TASSEL v3.0](https://tassel.bitbucket.io/TasselArchived.html)
 * `bwa` ([Burrows-Wheeler Aligner](https://bio-bwa.sourceforge.net/)) (for TASSEL not UNEAK)
+  * Note: `bowtie2` ([Bowtie 2](https://bowtie-bio.sourceforge.net/bowtie2/index.shtml)) is not implemented in `buildtassel3.bash` ([#2](/../../issues/2))
 * `concatenate.pl` and `deconcatenate.pl` [scripts](https://bitbucket.org/khyma/igd_public) (if using the `-i` option)
 
 # Usage
