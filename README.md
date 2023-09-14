@@ -25,7 +25,7 @@ Lu F, Lipka AE, Elshire R, Cherney JH, Casler MD, Buckler ES, Costich DE. [Switc
 * `concatenate.pl` and `deconcatenate.pl` [scripts](https://bitbucket.org/khyma/igd_public) (if using the `-i` option)
 
 # Usage
-```text
+```console
 ./buildtassel3.bash -h
 
 --------
@@ -108,7 +108,7 @@ Usage: ./buildtassel3-itest.bash -p pipeline -o outputdir [-a alignment] [-i] [-
 ```
 
 ## Example
-```text
+```console
 ./buildtassel3.bash -s -p tassel -o ./testo
 
 -----------------------------------------------------------------------
