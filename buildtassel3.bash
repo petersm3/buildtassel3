@@ -173,7 +173,7 @@ cat <<'EOF'
 
 -t threads
       Threads (processors) used by bwa or bowtie2, defaults to 1.
-      If using SGE specify the approriate number of processors.
+      If using SGE specify the appropriate number of processors.
 
 -s
       Setup the initial directory structure in 'outputdir' to hold
