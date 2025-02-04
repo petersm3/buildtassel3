@@ -39,10 +39,10 @@
 # Email   : matthew@cgrb.oregonstate.edu
 # Created : 20150222
 # Modified: 20150304
-# Purpose : From Illumina GBS lane(s) count the number of occurances of:
+# Purpose : From Illumina GBS lane(s) count the number of occurrences of:
 # - barcodes with restriction sites, any length, with Ns
-# - barocdes with restriction sites, remove the barcode, truncate to 64
-#   bases and then fitler out reads with Ns (aka TASSEL 3 processing)
+# - barcodes with restriction sites, remove the barcode, truncate to 64
+#   bases and then filter out reads with Ns (aka TASSEL 3 processing)
 # Produce a CSV with the resulting values to stdout
 ##########################################################################
 
