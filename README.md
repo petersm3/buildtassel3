@@ -26,6 +26,7 @@ Lu F, Lipka AE, Elshire R, Cherney JH, Casler MD, Buckler ES, Costich DE. [Switc
 * `concatenate.pl` and `deconcatenate.pl` [scripts](https://bitbucket.org/khyma/igd_public) (if using the `-i` option) from [Katie Hyma](https://bitbucket.org/khyma)
 
 # Usage
+## buildtassel3.bash
 ```console
 $ ./buildtassel3.bash -h
 
@@ -280,3 +281,25 @@ DEF34BBYY,1,CGAA,MySample012,MyPlate2,A,3,,My comment H
 DEF34BBYY,5,CCAA,MySample010,MyPlate2,A,1,,My replicate F
 DEF34BBYY,5,GTAA,MySample013,MyPlate3,A,2,,My comment G
 DEF34BBYY,5,GGAC,MySample014,MyPlate3,A,3,,My comment H
+```
+## Statistics
+* See [Statistics](stats/) generation, e.g., [passfail.pl](stats/passfail.pl)
+** [Discussion](https://groups.google.com/g/tassel/c/f6Vw9tD3mcI/m/sEqzQFW_DwAJ) on use
+```console
+./passfail.pl
+
+Usage: ./passfail.pl -b countbarcodes_file -r countreads_file [-p percentage]
+
+-b, --barcodes
+       countbarcodes.csv produced by countbarcodes.pl
+-r, --reads
+       countreads.csv (reads per flowcell lane) in the format:
+       Flowcell,Lane,Reads
+-p, --percentage
+       Optional percentage cutoff (default is 10%) to determine if a
+       sample is defined as either 'pass' or 'fail' per:
+       (Number of 'good barcoded TASSEL 3 reads' per barcoded sample)
+       ((Total reads per lane) / (Number of Samples per lane))
+-h, --help
+       This usage information.
+```
