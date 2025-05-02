@@ -109,7 +109,7 @@ Usage: ./buildtassel3-itest.bash -p pipeline -o outputdir [-a alignment] [-i] [-
 
 ```
 
-## Example
+### Example
 ```console
 $ ./buildtassel3.bash -s -p tassel -o ./testo
 
