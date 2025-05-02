@@ -283,7 +283,7 @@ DEF34BBYY,5,GTAA,MySample013,MyPlate3,A,2,,My comment G
 DEF34BBYY,5,GGAC,MySample014,MyPlate3,A,3,,My comment H
 ```
 ## Statistics
-* See GBS [statistics](stats/) generation, e.g., [passfail.pl](stats/passfail.pl) (and [discussion](https://groups.google.com/g/tassel/c/f6Vw9tD3mcI/m/sEqzQFW_DwAJ) on use)
+* GBS [statistics](stats/) generation, e.g., [passfail.pl](stats/passfail.pl) (and [discussion](https://groups.google.com/g/tassel/c/f6Vw9tD3mcI/m/sEqzQFW_DwAJ) on use)
 ```console
 ./passfail.pl
 
