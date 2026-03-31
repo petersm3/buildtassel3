@@ -1,32 +1,32 @@
 # Summary
 Wrapper scripts to facilitate the running of [TASSEL](https://tassel.bitbucket.io/TasselArchived.html) (Trait Analysis by aSSociation, Evolution and Linkage) and [UNEAK](https://bytebucket.org/tasseladmin/tassel-5-source/wiki/docs/TasselPipelineUNEAK.pdf) (Universal Network Enabled Analysis Kit) [Genotyping by Sequencing](https://en.wikipedia.org/wiki/Genotyping_by_sequencing) (GBS) v3.0 analysis pipelines from https://www.maizegenetics.net/tassel/ and GBS [statistics](stats/) generation
 
-# Disclaimer
+## Disclaimer
 * These scripts are not endorsed by the [Edward Buckler Lab](https://www.maizegenetics.net/tassel/) or Cornell University
 * For running TASSEL with a reference genome it is recommended that you use the [latest v5.0](https://www.maizegenetics.net/tassel)
   * `buildtassel3.bash` will only work with TASSEL/UNEAK v3.0, not v5.0
 * For running TASSEL without a reference genome the v3.0 of [UNEAK](https://bytebucket.org/tasseladmin/tassel-5-source/wiki/docs/TasselPipelineUNEAK.pdf) may still be used
 
-# References
-## TASSEL
+## References
+### TASSEL
 Bradbury PJ, Zhang Z, Kroon DE, Casstevens TM, Ramdoss Y, Buckler ES. (2007) [TASSEL: Software for association mapping of complex traits in diverse samples](https://tassel.bitbucket.io/docs/bradbury2007bioinformatics.pdf). *Bioinformatics* 23:2633-2635.
 
-## UNEAK
+### UNEAK
 Lu F, Lipka AE, Elshire R, Cherney JH, Casler MD, Buckler ES, Costich DE. [Switchgrass genomic diversity, ploidy, and evolution: novel insights from a network-based SNP discovery protocol](https://doi.org/10.1371/journal.pgen.1003215). *PLoS Genet*. 2013;9(1):e1003215. 
 
-## buildtassel3
+### buildtassel3
 `buildtassel3.bash` used as part of:
 
 [Henning, J. A.](https://www.ars.usda.gov/pacific-west-area/corvallis-or/forage-seed-and-cereal-research-unit/people/john-henning/), Coggins, J., & [Peterson, M.](https://orcid.org/0000-0003-4422-4463) (2015). Simple [SNP](https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism)-based minimal marker genotyping for *[Humulus lupulus](https://en.wikipedia.org/wiki/Humulus_lupulus)* L. identification and variety validation. *BMC Research Notes*, 8(1), 542. doi:[10.1186/s13104-015-1492-2](https://doi.org/10.1186/s13104-015-1492-2)
 
-# Dependencies
+## Dependencies
 * [TASSEL v3.0](https://tassel.bitbucket.io/TasselArchived.html)
 * `bwa` ([Burrows-Wheeler Aligner](https://bio-bwa.sourceforge.net/)) (for TASSEL not UNEAK)
   * Note: `bowtie2` ([Bowtie 2](https://bowtie-bio.sourceforge.net/bowtie2/index.shtml)) is not implemented in `buildtassel3.bash` ([#2](/../../issues/2))
 * `concatenate.pl` and `deconcatenate.pl` [scripts](https://bitbucket.org/khyma/igd_public) (if using the `-i` option) from [Katie Hyma](https://bitbucket.org/khyma)
 
-# Usage
-## buildtassel3.bash
+## Usage
+### buildtassel3.bash
 ```console
 $ ./buildtassel3.bash -h
 
@@ -109,7 +109,7 @@ Usage: ./buildtassel3-itest.bash -p pipeline -o outputdir [-a alignment] [-i] [-
 
 ```
 
-### Example
+#### Example
 ```console
 $ ./buildtassel3.bash -s -p tassel -o ./testo
 
@@ -282,7 +282,7 @@ DEF34BBYY,5,CCAA,MySample010,MyPlate2,A,1,,My replicate F
 DEF34BBYY,5,GTAA,MySample013,MyPlate3,A,2,,My comment G
 DEF34BBYY,5,GGAC,MySample014,MyPlate3,A,3,,My comment H
 ```
-## Statistics
+### Statistics
 * GBS [statistics](stats/) generation, e.g., [passfail.pl](stats/passfail.pl) (and [discussion](https://groups.google.com/g/tassel/c/f6Vw9tD3mcI/m/sEqzQFW_DwAJ) on use)
 ```console
 ./passfail.pl
