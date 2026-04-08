@@ -1,4 +1,6 @@
-# Summary
+# BuildTASSEL3
+
+## Summary
 Wrapper scripts to facilitate the running of [TASSEL](https://tassel.bitbucket.io/TasselArchived.html) (Trait Analysis by aSSociation, Evolution and Linkage) and [UNEAK](https://bytebucket.org/tasseladmin/tassel-5-source/wiki/docs/TasselPipelineUNEAK.pdf) (Universal Network Enabled Analysis Kit) [Genotyping by Sequencing](https://en.wikipedia.org/wiki/Genotyping_by_sequencing) (GBS) v3.0 analysis pipelines from https://www.maizegenetics.net/tassel/ and GBS [statistics](stats/) generation
 
 ## Disclaimer
